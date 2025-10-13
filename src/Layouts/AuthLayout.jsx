@@ -21,7 +21,7 @@ const AuthLayout = () => {
       </div>
       {/* Right Side */}
       <div className="lg:col-span-5 flex items-center justify-center  ">
-        <div className="max-w-md w-full mx-3 md:mx-0 bg-white rounded-xl md:rounded-3xl  shadow-md p-5 md:p-10">
+        <div className="max-w-md w-full mx-3 md:mx-0 bg-white rounded-xl md:rounded-3xl  shadow-md p-5 md:p-10 motion-translate-x-in-[0%] motion-translate-y-in-[8%]">
           <Outlet />
         </div>
       </div>
