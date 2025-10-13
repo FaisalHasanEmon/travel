@@ -11,8 +11,8 @@ export default function HotelRequest() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        setLoading(true);
-        const res = await axios("/public/fakeApi/hotelrequests.json");
+        setLoading(false);
+        const res = await axios("/fakeApi/hotelrequests.json");
         setRequests(res?.data?.data);
       } catch (error) {
         console.log(error);

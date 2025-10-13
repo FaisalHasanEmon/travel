@@ -10,7 +10,8 @@ html {
   --font-mona: "Mona Sans", "sans-serif";
   /* --font-inter: "Inter", "sans-serif"; */
 }
+@plugin 'tailwindcss-motion';
 /* @plugin "daisyui"; */
-/* @plugin "daisyui" {
+@plugin "daisyui" {
   themes: light --default, dark --light;
-} */
+}

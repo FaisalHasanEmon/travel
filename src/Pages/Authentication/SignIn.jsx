@@ -166,7 +166,7 @@ const SignIn = () => {
         </button>
       </form>
       {/* Divider */}
-      <div className="divider">Or </div>
+      <div className="divider text-center">Or </div>
       {/* Social Login */}
       <div className="flex justify-evenly items-center  *:p-5 *:flex *:items-center *:justify-center *:shadow-sm *:rounded-md">
         {/* Google Login Button */}

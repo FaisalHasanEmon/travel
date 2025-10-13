@@ -10,16 +10,32 @@ const Hero = () => {
           {/* Text Section */}
           <div className="mb-6 lg:mb-0">
             <h1 className="text-[28px] md:text-5xl font-bold mb-4">
-              <span className="text-blue-700">Hotels</span> for Every{" "}
-              <span className="text-[#7ED957]">Group</span> at the{" "}
-              <span className="text-[#7ED957]">Best</span>{" "}
-              <span className="text-[#7ED957]">Price</span>
+              <span className="text-blue-700 motion-preset-fade motion-duration-700 motion-delay-0">
+                Hotels
+              </span>{" "}
+              <span className="motion-preset-fade motion-duration-700 motion-delay-200">
+                for Every
+              </span>{" "}
+              <span className="text-[#7ED957] motion-preset-fade motion-duration-700 motion-delay-400">
+                Group
+              </span>{" "}
+              <span className="motion-preset-fade motion-duration-700 motion-delay-600">
+                at the
+              </span>{" "}
+              <span className="text-[#7ED957] motion-preset-fade motion-duration-700 motion-delay-800">
+                Best
+              </span>{" "}
+              <span className="text-[#7ED957] motion-preset-fade motion-duration-700 motion-delay-1000">
+                Price
+              </span>
             </h1>
-            <p className="text-gray-600 mb-6 font-mona">
+
+            <p className="text-gray-600 mb-6 font-mona ">
               Book multiple rooms at your favorite hotels and get deals you
               won't find anywhere else.
             </p>
-            <button className="bg-white text-gray-700 font-medium py-2 px-4 rounded-full border border-gray-300 hover:bg-gray-100 flex items-center">
+
+            <button className="bg-white text-gray-700 font-medium py-2 px-4 rounded-full border border-gray-300 hover:bg-gray-100 flex items-center motion-preset-slide motion-delay-1400">
               Explore More <span className="ml-2">→</span>
             </button>
           </div>
