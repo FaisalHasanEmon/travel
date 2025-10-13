@@ -85,7 +85,7 @@ const SignIn = () => {
 
   return (
     <>
-      <h2 className="text-3xl lg:text-4xl font-medium mb-2 text-center md:text-left">
+      <h2 className="text-3xl lg:text-4xl font-medium mb-2 text-center md:text-left ">
         Login & Explore
       </h2>
       <p className="text-xs mb-6 text-center md:text-left">

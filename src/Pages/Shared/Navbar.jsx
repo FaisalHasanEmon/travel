@@ -155,7 +155,7 @@ const Navbar = () => {
 
           {/* User Profile DropDown */}
           {isUserProfile && (
-            <div className="w-52 p-6 bg-[#FFFFFF] rounded-lg absolute right-10 top-20 shadow-sm">
+            <div className="w-52 p-6 bg-[#FFFFFF] rounded-lg absolute right-10 top-20 shadow-sm motion-translate-x-in-[0%] motion-translate-y-in-[-106%] motion-duration-[0.38s] motion-ease-bounce">
               <ul className="*:py-2 text-[#4A4A4A] text-[16px]">
                 <li className="border-b border-[#CACACA] mb-2">
                   <Link

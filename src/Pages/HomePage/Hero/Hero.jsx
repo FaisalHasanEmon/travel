@@ -39,7 +39,6 @@ const Hero = () => {
               Explore More <span className="ml-2">→</span>
             </button>
           </div>
-
           {/* Image Section */}
           <div className="rounded-2xl">
             <img
