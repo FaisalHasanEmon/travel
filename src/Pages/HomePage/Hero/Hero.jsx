@@ -31,7 +31,7 @@ const Hero = () => {
             </h1>
             <p className="text-gray-600 mb-6 font-mona motion-scale-in-[0.87] motion-translate-x-in-[0%] motion-translate-y-in-[104%] motion-blur-in-[2px] motion-duration-[3.5s]/translate motion-delay-[0.75s]/blur">
               Book multiple rooms at your favorite hotels and get deals you
-              won't find anywhere else.
+              won&apos;t find anywhere else.
             </p>
 
             <button className="bg-white text-gray-700 font-medium py-2 px-4 rounded-full border border-gray-300 hover:bg-gray-100 flex items-center motion-scale-in-[0.56] motion-translate-x-in-[-48%] motion-translate-y-in-[47%] motion-rotate-in-[-12deg] motion-duration-[2.25s]">
