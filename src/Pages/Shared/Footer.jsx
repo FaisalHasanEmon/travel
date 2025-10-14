@@ -20,7 +20,9 @@ const Footer = () => {
         {/* Logo and Tagline */}
         <div className="mb-6 md:mb-0">
           <div className="w-10 mb-3">
-            <img src="/logo/logo.png" alt="Logo" />
+            <Link to="/">
+              <img src="/logo/logo.png" alt="Logo" />
+            </Link>
           </div>
           <p className="text-sm max-w-xs">
             We aim to provide modern explorers with innovative, functional and

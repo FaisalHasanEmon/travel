@@ -20,6 +20,8 @@
 import { Outlet } from "react-router-dom"; // Use 'react-router-dom' instead of 'react-router'
 import Navbar from "../Pages/Shared/Navbar";
 import Footer from "../Pages/Shared/Footer";
+import { Scroll } from "lucide-react";
+import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 
 const Main = () => {
   return (
@@ -30,6 +32,7 @@ const Main = () => {
          If it's fixed, you might need to adjust its positioning in the Navbar component itself.
          For this example, we'll treat it as a normal flow element and rely on the content margin.
       */}
+      <ScrollToTop />
       <Navbar />
 
       {/* 3. Main Content Area: Use <main> tag for semantics. 

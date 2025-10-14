@@ -29,7 +29,6 @@ const Hero = () => {
                 Price
               </span>
             </h1>
-
             <p className="text-gray-600 mb-6 font-mona motion-scale-in-[0.87] motion-translate-x-in-[0%] motion-translate-y-in-[104%] motion-blur-in-[2px] motion-duration-[3.5s]/translate motion-delay-[0.75s]/blur">
               Book multiple rooms at your favorite hotels and get deals you
               won't find anywhere else.
@@ -44,7 +43,7 @@ const Hero = () => {
             <img
               src={groupImage}
               alt="Group of friends"
-              className="rounded-lg  w-full h-auto motion-scale-in-20 motion-duration-2000 motion-ease-out-cubic"
+              className="rounded-lg  w-full h-auto object-cover"
             />
           </div>
         </div>

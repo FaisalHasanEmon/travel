@@ -225,7 +225,6 @@ export default function ProfilePage() {
           </div>
         </div>
       )}
-
       {/* Delete Account Modal */}
       {isDeleteModalOpen && (
         <div className="fixed inset-0 bg-black/50 border border-base-300 flex items-center justify-center z-50">
