@@ -70,7 +70,6 @@ export default function ProfilePage() {
             <h2 className="text-lg font-semibold mt-2">Mahdee Rashid</h2>
           </div>
         </div>
-
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
           <div>
             <p className="font-medium">E-mail</p>
@@ -104,7 +103,6 @@ export default function ProfilePage() {
           </div>
         </div>
       </div>
-
       {/* Update Fields */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
         <div className="flex flex-col gap-2">
@@ -119,7 +117,6 @@ export default function ProfilePage() {
             <FiEdit2 className="absolute right-3 top-1/2 -translate-y-1/2 text-blue-400" />
           </div>
         </div>
-
         <div className="flex flex-col gap-2">
           <label className="font-semibold">E-mail</label>
           <div className="relative">
