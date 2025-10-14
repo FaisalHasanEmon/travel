@@ -44,7 +44,7 @@ const Hero = () => {
             <img
               src={groupImage}
               alt="Group of friends"
-              className="rounded-lg  w-full h-auto motion-scale-in-[0.56] motion-translate-x-in-[67%] motion-translate-y-in-[33%] motion-rotate-in-[19deg] motion-duration-[2.25s]"
+              className="rounded-lg  w-full h-auto motion-scale-in-20 motion-duration-2000 motion-ease-out-cubic"
             />
           </div>
         </div>

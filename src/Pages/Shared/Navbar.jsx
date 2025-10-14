@@ -47,7 +47,7 @@ const Navbar = () => {
                       className={({ isActive }) =>
                         `hover:text-green-600 font-medium ${
                           isActive
-                            ? "text-green-600  before:w-full before:inline-block before:absolute  before:border-white before:bg-green-600 before:rounded-tl-4xl before:rounded-tr-4xl  before:top-11.5  relative  before:shadow-[0_0_4px_1px_rgba(34,197,94,0.6)]"
+                            ? "text-green-600  before:w-full before:inline-block before:absolute  before:border-white before:bg-green-600 before:rounded-tl-4xl before:rounded-tr-4xl  before:top-11.5  relative  before:shadow-[0_0_4px_1px_rgba(34,197,94,0.6)]  before:motion-scale-in-[0.1]  before:motion-translate-x-in-[3%] before:motion-translate-y-in-[42%]  "
                             : ""
                         }`
                       }
@@ -155,7 +155,7 @@ const Navbar = () => {
 
           {/* User Profile DropDown */}
           {isUserProfile && (
-            <div className="w-52 p-6 bg-[#FFFFFF] rounded-lg absolute right-10 top-20 shadow-sm motion-translate-x-in-[0%] motion-translate-y-in-[-106%] motion-duration-[0.38s] motion-ease-bounce">
+            <div className="w-52 p-6 bg-[#FFFFFF] rounded-lg absolute right-10 top-20 shadow-sm motion-translate-x-in-[0%] motion-translate-y-in-[-106%] motion-ease-bounce  motion-duration-[0.38s]">
               <ul className="*:py-2 text-[#4A4A4A] text-[16px]">
                 <li className="border-b border-[#CACACA] mb-2">
                   <Link
