@@ -34,6 +34,7 @@ const AboutUs = () => {
           {/* Video */}
           <div className="flex-1 aspect-video overflow-clip rounded-2xl w-full max-w-full">
             <iframe
+              onClick={handleOnClick}
               className="w-full h-full"
               src={
                 isPlaying
