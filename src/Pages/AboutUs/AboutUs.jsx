@@ -32,32 +32,18 @@ const AboutUs = () => {
           </div>
 
           {/* Video */}
-          <div className="w-full lg:w-1/2 aspect-video overflow-clip rounded-2xl max-w-full">
-            {!isPlaying ? (
-              <div
-                onClick={handleOnClick}
-                className="w-full h-full cursor-pointer relative"
-              >
-                <img
-                  src="/Images/groupBooking.jpg"
-                  alt="Thumbnail"
-                  className="w-full h-full object-cover blur-[1px]"
-                />
-                <img
-                  src="/Icons/autoPlay.png"
-                  alt="Auto Play Icon"
-                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 sm:w-12 md:w-16 lg:w-20"
-                />
-              </div>
-            ) : (
-              <iframe
-                className="w-full h-full"
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
-            )}
+          <div className="flex-1 aspect-video overflow-clip rounded-2xl w-full max-w-full">
+            <iframe
+              className="w-full h-full"
+              src={
+                isPlaying
+                  ? "https://player.vimeo.com/video/1099152050?autoplay=1&badge=0&byline=0&h=5f41bef9ed&portrait=0&title=0&loop=0&muted=0&controls=1"
+                  : "https://player.vimeo.com/video/1099152050?autoplay=0&badge=0&byline=0&h=5f41bef9ed&portrait=0&title=0&loop=0&muted=0&controls=1"
+              }
+              title="GroupBooking"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
 
