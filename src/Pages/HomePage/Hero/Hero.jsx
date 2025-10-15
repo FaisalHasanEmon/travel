@@ -48,7 +48,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
       <HotelBookingForm />
     </section>
   );
