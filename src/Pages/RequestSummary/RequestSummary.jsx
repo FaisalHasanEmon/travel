@@ -149,7 +149,7 @@ export default function RequestSummary() {
                       </span>
                       <span className="text-xs md:text-sm text-gray-600">
                         You are saving ${property.savings} per room/night.
-                        That's a total savings of $Y!
+                        That&apos;s a total savings of $Y!
                       </span>
                     </div>
 
