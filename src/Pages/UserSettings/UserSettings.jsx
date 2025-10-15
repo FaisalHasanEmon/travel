@@ -1,7 +1,7 @@
 const UserSettings = () => {
   return (
-    <div className="container px-5 mx-auto  ">
-      <div className="p-3 pt-10 md:p-6 rounded-3xl bg-white space-y-8">
+    <div className="container px-5 mx-auto pt-10 ">
+      <div className="p-3  md:p-6 rounded-3xl bg-white space-y-8">
         {/* Title */}
         <div className="space-y-2">
           <h2 className="font-semibold text-3xl md:text-[40px] text-[#1A1A1A]">
