@@ -5,7 +5,6 @@ const ContactUs = () => {
       <div className="relative bg-[url('/contactUs/contactUs.jpg')] bg-cover bg-center lg:bg-top min-h-[624px] flex items-center justify-center">
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/30"></div>
-
         {/* Text Content */}
         <div className="relative z-10 text-center text-white px-4">
           <h1 className="text-4xl md:text-5xl font-bold">How can we help?</h1>
@@ -22,7 +21,6 @@ const ContactUs = () => {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">
             Worldwide Offices
           </h2>
-
           {/* Grid */}
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[...Array(6)].map((_, i) => (
@@ -44,5 +42,4 @@ const ContactUs = () => {
     </div>
   );
 };
-
 export default ContactUs;

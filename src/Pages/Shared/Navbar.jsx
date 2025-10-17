@@ -139,16 +139,24 @@ const Navbar = () => {
                     </NavLink>
                   </li>
                 ))}
-                <li>
-                  <button className="bg-white text-gray-700 border border-gray-300 rounded-full px-4 py-2 hover:bg-gray-100 font-medium mt-2 w-full text-center">
-                    Log in
-                  </button>
-                </li>
-                <li>
-                  <button className="bg-green-500 text-white rounded-full px-4 py-2 hover:bg-green-600 font-medium  w-full text-center">
-                    Sign up
-                  </button>
-                </li>
+                {!user && (
+                  <>
+                    <li>
+                      <Link to="/auth/signin" onClick={() => setIsOpen(false)}>
+                        <button className="bg-white text-gray-700 border border-gray-300 rounded-full px-4 py-2 hover:bg-gray-100 font-medium mt-2 w-full text-center">
+                          Log in
+                        </button>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/auth/signup" onClick={() => setIsOpen(false)}>
+                        <button className="bg-green-500 text-white rounded-full px-4 py-2 hover:bg-green-600 font-medium  w-full text-center">
+                          Sign up
+                        </button>
+                      </Link>
+                    </li>
+                  </>
+                )}
               </ul>
             </div>
           )}

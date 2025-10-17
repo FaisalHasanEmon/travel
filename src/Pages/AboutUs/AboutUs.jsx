@@ -8,6 +8,7 @@ const AboutUs = () => {
   const handleOnClick = () => {
     setIsPlaying(true);
   };
+
   return (
     <section className="py-10 lg:py-14.5">
       {/* Before Marquee Section */}
@@ -30,7 +31,6 @@ const AboutUs = () => {
               Try Group Book now!
             </button>
           </div>
-
           {/* Video */}
           <div className="flex-1 aspect-video overflow-clip rounded-2xl w-full max-w-full">
             <iframe
@@ -47,7 +47,6 @@ const AboutUs = () => {
             ></iframe>
           </div>
         </div>
-
         {/* 2nd Picture and Image section */}
         <div className="flex flex-col gap-10 lg:flex-row-reverse lg:gap-0 justify-center items-start">
           {/* Text */}
