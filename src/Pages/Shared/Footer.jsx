@@ -71,11 +71,11 @@ const Footer = () => {
                 About Us
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="#" className="text-white hover:underline">
                 Guest review
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
 
