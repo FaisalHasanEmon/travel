@@ -4,12 +4,13 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { FaUser } from "react-icons/fa6";
 import { Link, useNavigate } from "react-router-dom";
 import google from "../../assets/authImages/google.png";
-import outlook from "../../assets/authImages/outlook.png";
 import yahoo from "../../assets/authImages/yahoo.png";
 import recaptcha from "../../assets/authImages/recaptcha.png";
+import useAuth from "../../hooks/useAuth";
 
 const Signup = () => {
   const navigate = useNavigate();
+  const { signInWithGoogle, signInWithYahoo } = useAuth();
   const {
     register,
     handleSubmit,
@@ -25,6 +26,62 @@ const Signup = () => {
     console.log("Form Data:", data);
     navigate("/auth/otp-verify");
     // Perform login API call here
+  };
+
+  // Google Sign Up Handler
+  const handleGoogleSignUp = () => {
+    // Handle Google Sign Up logic here
+    signInWithGoogle()
+      .then((result) => {
+        if (result) {
+          navigate("/");
+          // const userInfo = {
+          //   provider: "google",
+          //   email: result.user?.email,
+          //   full_name: result.user?.displayName,
+          //   social_id: result.user?.uid,
+          //   social_image_url: result.user?.photoURL,
+          // };
+          // try {
+          //   axiosSecure
+          //     .post("/api/auth/social-login", userInfo)
+          //     .then(() => navigate("/"));
+          // } catch (er) {
+          //   console.log(er);
+          // }
+        } else alert("Something went wrong");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
+  // Yahoo Sign Up Handler
+  const handleYahooSignUp = () => {
+    // Handle Yahoo Sign Up logic here
+    signInWithYahoo()
+      .then((result) => {
+        if (result) {
+          navigate("/");
+          // const userInfo = {
+          //   provider: "google",
+          //   email: result.user?.email,
+          //   full_name: result.user?.displayName,
+          //   social_id: result.user?.uid,
+          //   social_image_url: result.user?.photoURL,
+          // };
+          // try {
+          //   axiosSecure
+          //     .post("/api/auth/social-login", userInfo)
+          //     .then(() => navigate("/"));
+          // } catch (er) {
+          //   console.log(er);
+          // }
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   return (
@@ -190,14 +247,19 @@ const Signup = () => {
       {/* Divider */}
       <div className="divider">Or </div>
       {/* Social Login */}
+      {/* Google Login Button */}
       <div className="flex justify-evenly items-center  *:p-5 *:flex *:items-center *:justify-center *:shadow-sm *:rounded-md">
-        <button className="  hover:bg-gray-100 *:transition-transform hover:*:duration-300 hover:*:scale-150">
+        <button
+          onClick={handleGoogleSignUp}
+          className="  hover:bg-gray-100 *:transition-transform hover:*:duration-300 hover:*:scale-150"
+        >
           <img src={google} alt="Google" className="w-6 h-6 object-cover" />
         </button>
-        <button className="  hover:bg-gray-100 *:transition-transform hover:*:duration-300 hover:*:scale-150">
-          <img src={outlook} alt="Outlook" className="w-6 h-6 object-cover" />
-        </button>
-        <button className="  hover:bg-gray-100 *:transition-transform hover:*:duration-300 hover:*:scale-150">
+        {/* Yahoo Login Button */}
+        <button
+          onClick={handleYahooSignUp}
+          className="  hover:bg-gray-100 *:transition-transform hover:*:duration-300 hover:*:scale-150"
+        >
           <img src={yahoo} alt="Yahoo" className="w-6 h-6 object-cover" />
         </button>
       </div>
