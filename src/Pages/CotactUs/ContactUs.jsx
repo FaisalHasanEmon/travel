@@ -24,6 +24,7 @@ const ContactUs = () => {
       {/* Offices Section */}
       <div className="bg-[#FFFFFF]  py-16 px-6">
         <div className="container p-4 md:p-6 mx-auto  rounded-xl shadow-[0_0_50px_#00000014] ">
+          {/* Heading */}
           <h2 className="text-2xl text-center md:text-left md:text-4xl font-bold mb-6">
             Contact Information
           </h2>
